@@ -52,14 +52,14 @@ const Weather = ( {coordinates}  ) => {
               <div className='humidity-wind-container'>
 
                 <div className='humidity-container'>
-                  <img className='humidity-icon' src="src/assets/svg/humidity.svg" alt="" />
+                  <img className='humidity-icon' src="./src/assets/svg/humidity.svg" alt="" />
                   <p className='humidity'>{Math.round(JSON.stringify(weatherData.main.humidity))} %</p>
                 </div>
 
                 <div className='separator'></div>
 
                 <div className='wind-container'>
-                  <img className='wind-icon' src="src/assets/svg/wi_wind.svg" alt="" />
+                  <img className='wind-icon' src="./src/assets/svg/wi_wind.svg" alt="" />
                   <p className='wind-speed'>{JSON.stringify(weatherData.wind.speed)} <span className='small'>km/hr</span>
                   </p>
                 </div>
