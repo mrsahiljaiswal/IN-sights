@@ -3,8 +3,9 @@ import { LuRefreshCw } from "react-icons/lu";
 
 async function fetchQuote(){
     try {
-        const response = await fetch("https://api.quotable.io/random?maxLength=200")
+        const response = await fetch("https://api.quotable.io/quotes/random?maxLength=200")
         const data = await response.json()
+        console.log(data)
         return data;
     } catch (error) {
         console.log("Error During Fetching: ",error);
@@ -31,7 +32,7 @@ function Quotes () {
     useEffect(()=>{
         const generateQuote = async () => {
             const quote = await fetchQuote();
-            const { author , content } = quote;
+            const { author , content } = quote[0];
             setQuote({
                     author,
                     content
