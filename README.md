@@ -1,6 +1,6 @@
 # INsights 
 
-[**🌐 Live Demo**](https://your-live-demo-link.com)
+[**🌐 Live Demo**](https://in-sights.netlify.app/)
 
 ![INsights Screenshot](https://res.cloudinary.com/de5pdwmbc/image/upload/v1727475855/fjahewnt0kcquihhsszf.png)
 
@@ -93,7 +93,7 @@ Once the app is up and running, you'll be able to:
 - 🕰️ **See the current time**.
 - 📱 **Experience a fully responsive design** that adapts to any screen size.
 
-**Important:** While accessing the [Live Demo](https://your-live-demo-link.com), please allow location permissions to enable the app to fetch and display the weather details of your city.
+**Important:** While accessing the [Live Demo](https://in-sights.netlify.app/), please allow location permissions to enable the app to fetch and display the weather details of your city.
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -109,5 +109,5 @@ A special thanks to [Tatyana Pavliuk](https://www.vecteezy.com/members/tati-dsgn
 ### Challenge Dusted @ **Codedam**
 ---
 
-[**🌐 Live Demo**](https://your-live-demo-link.com)
+[**🌐 Live Demo**](https://in-sights.netlify.app/)
 
