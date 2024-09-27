@@ -46,20 +46,20 @@ const Weather = ( {coordinates}  ) => {
           <div className='weather-box'>
               <div className='temperature-icon-container'>
                   <p className='temperature-value'>{Math.round(JSON.stringify(weatherData.main.temp-273.15))} <span className='theme-color deg-symbol'>&deg;C</span></p>
-                  <img className='weather-icon' src={`src/assets/svg/openweathermap/${icon}.svg`} alt="" />
+                  <img className='weather-icon' src={`/openweathermap/${icon}.svg`} alt="" />
               </div>
 
               <div className='humidity-wind-container'>
 
                 <div className='humidity-container'>
-                  <img className='humidity-icon' src="./src/assets/svg/humidity.svg" alt="" />
+                  <img className='humidity-icon' src="/svg/humidity.svg" alt="" />
                   <p className='humidity'>{Math.round(JSON.stringify(weatherData.main.humidity))} %</p>
                 </div>
 
                 <div className='separator'></div>
 
                 <div className='wind-container'>
-                  <img className='wind-icon' src="./src/assets/svg/wi_wind.svg" alt="" />
+                  <img className='wind-icon' src="/svg/wi_wind.svg" alt="" />
                   <p className='wind-speed'>{JSON.stringify(weatherData.wind.speed)} <span className='small'>km/hr</span>
                   </p>
                 </div>

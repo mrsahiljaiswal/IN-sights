@@ -9,7 +9,7 @@
 
 body{
     height: 100vh;
-    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/1.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("/Image/1.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,49 +17,49 @@ body{
     transition: 0.5 ease-in;
 }
 .img0{
-    background: linear-gradient( rgba(0,0,0,0.2) , rgba(0,0,0,0.2) ),url("./assets/Image/0.jpg") ;
+    background: linear-gradient( rgba(0,0,0,0.2) , rgba(0,0,0,0.2) ),url("/Image/0.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .img1{
-    background: linear-gradient( rgba(0,0,0,0.3) , rgba(0,0,0,0.1) ), url("./assets/Image/1.jpg") ;
+    background: linear-gradient( rgba(0,0,0,0.3) , rgba(0,0,0,0.1) ), url("/Image/1.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .img2{
-    background:  linear-gradient( rgba(0,0,0,0.3) , rgba(0,0,0,0.3) ), url("./assets/Image/2.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.3) , rgba(0,0,0,0.3) ), url("/Image/2.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .img3{
-    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/3.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("/Image/3.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .img4{
-    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/4.webp") ;
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("/Image/4.webp") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .img5{
-    background:  linear-gradient( rgba(0,0,0,0.8) , rgba(0,0,0,0.4) ), url("./assets/Image/5.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.8) , rgba(0,0,0,0.4) ), url("/Image/5.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .img6{
-    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/6.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("/Image/6.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .img7{
-    background:  linear-gradient( rgba(0,0,0,0.6) , rgba(0,0,0,0.7) ), url("./assets/Image/7.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.6) , rgba(0,0,0,0.7) ), url("/Image/7.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
