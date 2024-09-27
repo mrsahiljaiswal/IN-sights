@@ -46,7 +46,7 @@ const Weather = ( {coordinates}  ) => {
           <div className='weather-box'>
               <div className='temperature-icon-container'>
                   <p className='temperature-value'>{Math.round(JSON.stringify(weatherData.main.temp-273.15))} <span className='theme-color deg-symbol'>&deg;C</span></p>
-                  <img className='weather-icon' src={`/openweathermap/${icon}.svg`} alt="" />
+                  <img className='weather-icon' src={`svg/openweathermap/${icon}.svg`} alt="" />
               </div>
 
               <div className='humidity-wind-container'>
