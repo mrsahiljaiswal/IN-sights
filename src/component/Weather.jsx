@@ -59,7 +59,7 @@ const Weather = ( {coordinates}  ) => {
                 <div className='separator'></div>
 
                 <div className='wind-container'>
-                  <img className='wind-icon' src="/svg/wi_wind.svg" alt="" />
+                  <img className='wind-icon' src="/svg/wind.svg" alt="" />
                   <p className='wind-speed'>{JSON.stringify(weatherData.wind.speed)} <span className='small'>km/hr</span>
                   </p>
                 </div>
