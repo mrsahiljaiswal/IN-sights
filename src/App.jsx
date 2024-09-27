@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Quotes } from "./component/Quotes";
-import  {Location}  from "./component/Location";
+import { Location , Quotes , Time , Weather } from "./component"
 import "./App.css"
-import { Time } from "./component/Time";
-import { Weather } from "./component/Weather";
+
+
 function App(){
+
 
   const [coordinates,setCoordinates]=useState({
     lat:null,
@@ -13,11 +13,11 @@ function App(){
 
   return(
     <>
-    <Quotes/>
-    
-    <Time/>
-    <Location setCoordinates={setCoordinates}/>
-    <Weather coordinates={coordinates}/>
+    <div className="quote-weather-container">
+      <Quotes />
+      <Weather coordinates={coordinates}/>
+    </div>
+    <Time setCoordinates={setCoordinates}/>
     </>
   )}
 export default App;

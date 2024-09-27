@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-const APIKEY=`e6cf19cdee9a6e87d96ed178cab81e02`;
 
-
+const APIKEY = import.meta.env.VITE_APIKEY;
 async function getLocation(lat,lon){
     try {
         const response= await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=${APIKEY}`);
@@ -29,11 +28,10 @@ const [geolocation , setGeolocation] = useState({
 
         const latitude=position.coords.latitude;
         const longitude=position.coords.longitude;
-        setCoordinates({ lat:latitude, lon:longitude})
         setLat(latitude);
         setLon(longitude);
 
-        const fetchLocation=async()=>{
+        const fetchLocation = async () =>{
 
             const UserLocation = await getLocation(latitude,longitude)
             const {state , country , name} =  UserLocation[0];
@@ -43,31 +41,40 @@ const [geolocation , setGeolocation] = useState({
                 city:name
              })
              
+        setCoordinates({ lat:latitude, lon:longitude})
             
         }
         fetchLocation()
     }
 
     const failed=(error)=>{
-        console.log("Failed to get User Co-ordinates",error)
+    console.log("Failed to get User Co-ordinates",error)
     }
-    
+
     useEffect(()=>{
         navigator.geolocation.getCurrentPosition(success,failed)
     },[])
 
 
-    return(
-        <div className="localGeolocation">
-            <div>
-                <p>{geolocation.country}</p>
-                <p>{geolocation.city}</p>
-                <p>{geolocation.state}</p>
-            </div>
+    return (
+        <div className="location-container">
+            {geolocation.country ? (
+                <>
+                    <p>{geolocation.country}</p>
+                    {geolocation.city && geolocation.state ? (
+                        
+                        <p>
+                            {geolocation.city}, {geolocation.state}
+                        </p>
+                    ) : (
+                        <p>Location details incomplete</p>
+                    )}
+                </>
+            ) : (
+                <p className="loading">Loading...</p>
+            )}
         </div>
-    )
-    
-    
+    );    
 }
 
-export {Location}
+export default Location

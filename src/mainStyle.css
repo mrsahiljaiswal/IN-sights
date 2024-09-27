@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,11 +9,71 @@
 
 body{
     height: 100vh;
-    background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4) ), url("./assets/Image/earlyMorning.webp") ;
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/1.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
-    padding: 20%;
+    padding: 50px 70px;
+    transition: 0.5 ease-in;
+}
+.img0{
+    background: linear-gradient( rgba(0,0,0,0.2) , rgba(0,0,0,0.2) ),url("./assets/Image/0.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img1{
+    background: linear-gradient( rgba(0,0,0,0.3) , rgba(0,0,0,0.1) ), url("./assets/Image/1.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2{
+    background:  linear-gradient( rgba(0,0,0,0.3) , rgba(0,0,0,0.3) ), url("./assets/Image/2.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img3{
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/3.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4{
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/4.webp") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img5{
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/5.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img6{
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/6.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img7{
+    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/7.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+@media (max-height: 1024px ) {
+    body{
+        padding: 20px 60px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 50px 50px;
+    }
+}

@@ -1,7 +1,265 @@
-#root {
-  background-color: white;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-color{
+  color: red;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loading{
+  color: white;
+}
+
+.quote-weather-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.quotes{
+  color: white;
+  align-self: flex-start;
+  font-weight: 200;
+  width: 70%;
+}
+
+.quote-content{
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-family: outfit
+}
+
+.quote-author-refresh{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quote-author{
+  font-family: roboto;
+  font-size: 1rem;  
+  font-style: italic;
+  font-weight: 500;
+}
+
+.refresh-btn{
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.rotate{
+  transform: rotate(360deg);
+}
+
+
+.weather-container{
+  font-family: outfit ;
+  color: white;
+  width: 200px;
+}
+.weather-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature-icon-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.temperature-value{
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 4rem;
+  display: flex;
+}
+
+.weather-icon{
+  width: 50px;
+  align-self: last baseline;
+  margin-bottom: 5px;
+}
+
+.humidity-icon,.wind-icon{
+  width: 50px;
+}
+
+.deg-symbol{
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.humidity-wind-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.separator{
+  height: 60px;
+  width: 0.5px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.humidity-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.wind-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-time-day{
+  font-family: Roboto;
+  color: white;
+  display: flex;
+  align-items: baseline ;
+  justify-content: space-between;
+  
+}
+.time{
+  font-size: 8rem;
+}
+
+.time-timezone{
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.time-zone{
+  font-size: 1rem;
+  margin-bottom: 19px; 
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.day-container h4{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+
+}
+
+
+.location-container{
+  color: white;
+}
+
+.location-container{
+  display: flex;
+  gap: 5px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 01rem;
+  margin: 10px 0px 40px; 
+  letter-spacing: 1.5px;
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .quotes{
+    margin: auto 0px;
+  }
+  .time {
+    font-size: 5rem;  
+  }
+
+  .time-zone {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .day-container h4 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .quote-weather-container {
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+  .time-timezone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .quotes {
+    width: 100%;
+      margin: auto 0px;
+  }
+  .quote-author-refresh{
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .date-time-day {
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.time{
+  font-size: 6rem;
+}
+
+.time-timezone {
+  flex-direction: column;
+  align-items: center;
+}
+
+h4.day{
+  font-size: 1rem;
+}
+
+.location-container {
+  margin:5px 0px;
+  justify-content: center;
+}
+
+.quote-content{
+  font-size: 0.9rem;
+}
+.quote-author{
+  font-size: 0.7rem
+}
+
 }
