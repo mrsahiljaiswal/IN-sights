@@ -47,7 +47,7 @@ body{
     background-repeat: no-repeat;
 }
 .img5{
-    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/5.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.8) , rgba(0,0,0,0.4) ), url("./assets/Image/5.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body{
     background-repeat: no-repeat;
 }
 .img7{
-    background:  linear-gradient( rgba(0,0,0,0.7) , rgba(0,0,0,0.4) ), url("./assets/Image/7.jpg") ;
+    background:  linear-gradient( rgba(0,0,0,0.6) , rgba(0,0,0,0.7) ), url("./assets/Image/7.jpg") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
