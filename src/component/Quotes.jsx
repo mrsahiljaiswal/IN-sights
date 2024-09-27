@@ -56,7 +56,7 @@ function Quotes () {
                 )
                 :
                 (
-                    <p className='loading'>Loading...</p>
+                    <p className='loading'></p>
                 )
             }
             </>      
