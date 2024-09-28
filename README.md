@@ -1,10 +1,10 @@
-# INsights 
+# IN-sights 
 
 [**🌐 Live Demo**](https://in-sights.netlify.app/)
 
 ![INsights Screenshot](https://res.cloudinary.com/de5pdwmbc/image/upload/v1727475855/fjahewnt0kcquihhsszf.png)
 
-**INsights** is a dynamic, user-friendly React application that provides real-time weather updates, current time, and daily quotes. The app is also designed to function as a visually appealing screensaver with high-quality landscape images in the background, creating an engaging experience for the user.
+**IN-sights** is a dynamic, user-friendly React application that provides real-time weather updates, current time, and daily quotes. The app is also designed to function as a visually appealing screensaver with high-quality landscape images in the background, creating an engaging experience for the user.
 
 ## 🚀 Features
 - **Real-Time Weather**: Get the current weather conditions for your location, including temperature and wind speed.
