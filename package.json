@@ -1,14 +1,34 @@
 {
-  "name": "insights",
-  "private": true,
+  "name": "in-sights",
   "version": "1.0.0",
+  "description": "INsights is a user-friendly & dynamic React app delivering real-time weather updates, current time, and engaging quotes, all enhanced by high-quality backgrounds acting as a screen saver...",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsahiljaiswal/in-sights.git"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "weather",
+    "quotes",
+    "geolocation",
+    "dynamic-background",
+    "responsive-design"
+  ],
+  "author": "Sahil Jaiswal sahiljaiswal757@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrsahiljaiswal/in-sights/issues"
+  },
+  "homepage": "https://github.com/mrsahiljaiswal/in-sights#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
     "react": "^18.3.1",
