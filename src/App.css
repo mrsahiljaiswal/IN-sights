@@ -211,6 +211,13 @@ body{
 
 @media (max-width: 600px) {
 
+  .mobile-theme{
+    color: white;
+  }
+  #root{
+    flex-direction: column-reverse;    
+  }
+
   .quote-weather-container {
     margin: 0px;
     flex-direction: column;
@@ -245,9 +252,27 @@ h1.time{
   flex-direction: column;
   align-items: center;
 }
-
+h3.time-zone{
+  font-size: 0.75rem;
+}
 h4.day{
   font-size: 1rem;
+}
+.weather-box {
+  font-size: 1rem;
+}
+.quote-author-refresh{
+  width: 100%;
+}
+.quote-author-refresh{
+  flex-direction: row;
+}
+.quote-weather-container {
+  margin: 0px;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 1px;
 }
 
 .location-container {
@@ -260,6 +285,21 @@ h4.day{
 }
 .quote-author{
   font-size: 0.7rem
+}
+.temperature-value,
+.deg-symbol{
+  font-size: 1rem;
+  display: inline;
+  align-self: center;
+}
+.weather-icon{
+  width: 40px;
+  margin: 0;
+}
+.humidity-wind-container,
+.humidity-icon,
+.wind-icon {
+  display: none;
 }
 
 }

@@ -74,6 +74,6 @@ body{
 
 @media (max-width: 600px){
     body{
-        padding: 50px 50px;
+        padding: 10px 50px;
     }
 }

@@ -92,9 +92,7 @@ function Time({setCoordinates}){
 
                 <div className="day-container">
                     <h4 className="day"> 
-                        <span className="theme-color" style={{fontSize
-                            :"2rem"
-                        }}>{firstLetterOfDay}</span>
+                        <span className="theme-color first-letter-of-day mobile-theme" >{firstLetterOfDay}</span>
                         <span>{restOfDay}</span>, {months[date.getMonth()]} {date.getDate()} 
                     </h4> 
                 </div>
