@@ -1,4 +1,4 @@
-# INsights 
+# IN-sights 
 
 [**🌐 Live Demo**](https://in-sights.netlify.app/)
 
