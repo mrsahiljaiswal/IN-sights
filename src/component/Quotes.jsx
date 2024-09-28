@@ -1,25 +1,31 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { LuRefreshCw } from "react-icons/lu";
 
-async function fetchQuote(){
-    try {
-        const response = await fetch("https://api.quotable.io/quotes/random?maxLength=200")
-        const data = await response.json()
-        console.log(data)
-        return data;
-    } catch (error) {
-        console.log("Error During Fetching: ",error);
-        return null;
-    }
-}
 
 function Quotes () {
     
     const [ refresh , setRefresh ] = useState(false)
     const [ quote , setQuote ] = useState({
+        author:"",
         content:"",
-        author:""
     })
+
+    async function fetchQuote(){
+        try {
+            const response = await fetch("https://johndturn-quotableapiproxy.web.val.run/")
+            const data = await response.json()
+    
+            const {author , content } = data[0];
+            setQuote({
+                    author,
+                    content
+            })
+    
+        } catch (error) {
+            console.log("Error During Fetching: ",error);
+            return null;
+        }
+    }
 
     const handleClick=()=>{
         setRefresh((prevValue)=>!prevValue) 
@@ -30,22 +36,15 @@ function Quotes () {
     }
 
     useEffect(()=>{
-        const generateQuote = async () => {
-            const quote = await fetchQuote();
-            const { author , content } = quote[0];
-            setQuote({
-                    author,
-                    content
-                })
-        };
-        generateQuote();
+        fetchQuote();
     },[ refresh ])
 
         return(
             <>
             {
                  
-                (quote.content) ? (
+                (quote.author && quote.content) ? (
+                    
                     <div className="quotes">
                         <p className='quote-content'>"{quote.content}"</p>
                         <div className='quote-author-refresh'>
@@ -56,7 +55,7 @@ function Quotes () {
                 )
                 :
                 (
-                    <p className='loading'></p>
+                    <p className='loading'>Loading...</p>
                 )
             }
             </>      
